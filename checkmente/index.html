@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckMente - Espaço para Desabafar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">CM</div>
+                    CheckMente
+                </div>
+                <nav>
+                    <a href="#" class="nav-link active" data-tab="inicio">Inicio</a>
+                    <a href="#" class="nav-link" data-tab="sobre">Sobre mim</a>
+                    <a href="#" class="nav-link" data-tab="desabafar">Desabafar</a>
+                    <a href="#" class="nav-link" data-tab="ajuda">Ajuda</a>
+                </nav>
+                <button class="theme-toggle" id="themeToggle">
+                    <span>🌙</span> Modo Escuro
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Aba Inicio -->
+        <div id="inicio" class="tab active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Seu Espaço para Desabafar</h1>
+                    <p>Um lugar seguro onde suas palavras são ouvidas e seus sentimentos são compreendidos</p>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Conversa Segura</h3>
+                    <p>Compartilhe seus pensamentos em um ambiente livre de julgamentos e com total privacidade</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Apoio Emocional</h3>
+                    <p>Receba orientação profissional para lidar com desafios emocionais e acadêmicos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Confidencialidade</h3>
+                    <p>Todas as conversas são protegidas com os mais altos padrões de segurança e sigilo</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Aba Sobre Mim -->
+        <div id="sobre" class="tab">
+            <div class="profile">
+                <div class="profile-info">
+                    <h2>Olaaa bem vindo ao CheckMente</h2>
+                    <p>Eu sou a Emanoelly Borges da Silva IIW24A, desenvolvi o CheckMente para se sentir bem consigo mesmo!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba Desabafar -->
+        <div id="desabafar" class="tab">
+            <div class="form-container">
+                <h2 class="form-title">Venha Desabafar</h2>
+                <form id="desabafarForm">
+                    <div class="form-group">
+                        <label class="form-label">Assunto</label>
+                        <select class="form-select">
+                            <option value="">Selecione o assunto</option>
+                            <option value="estudos">Dificuldades nos Estudos</option>
+                            <option value="pessoal">Questões Pessoais</option>
+                            <option value="relacionamentos">Relacionamentos</option>
+                            <option value="ansiedade">Ansiedade e Estresse</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Seu desabafo</label>
+                        <textarea class="form-textarea" placeholder="Conte-me o que está passando..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Prefere ser contactado?</label>
+                        <select class="form-select">
+                            <option value="">Selecione uma opção</option>
+                            <option value="email">E-mail</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="nenhum">Prefiro não ser contactado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Informações de contato</label>
+                        <input type="text" class="form-input" placeholder="E-mail ou número de WhatsApp">
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">
+                        <span>📤</span> Enviar Desabafo
+                    </button>
+                </form>
+            </div>
+
+
+        </div>
+
+        <!-- Aba Ajuda -->
+        <div id="ajuda" class="tab">
+            <div class="form-container">
+                <h2 class="form-title">Reportar Problema</h2>
+                <form id="reportForm">
+                    <div class="form-group">
+                        <label class="form-label">Descreva o problema</label>
+                        <textarea class="form-textarea" placeholder="Descreva em detalhes o problema que encontrou..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Em qual página ocorreu?</label>
+                        <select class="form-select">
+                            <option value="">Selecione a página</option>
+                            <option value="inicio">Página Inicial</option>
+                            <option value="sobre">Sobre Mim</option>
+                            <option value="desabafar">Venha Desabafar</option>
+                            <option value="ajuda">Ajuda</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Seu e-mail para contato</label>
+                        <input type="email" class="form-input" placeholder="seu@email.com">
+                    </div>
+
+                    <button type="submit" class="btn">
+                        <span>🚨</span> Reportar Problema
+                    </button>
+                </form>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="text-align: center; margin: 3rem 0 2rem; font-size: 2rem; font-weight: 700;">Perguntas Frequentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como funciona o processo de desabafo?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você preenche o formulário na aba "Venha desabafar" e eu entro em contato dentro de 24 horas para agendarmos uma conversa inicial gratuita.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Meus dados são confidenciais?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Todos os dados são criptografados e armazenados com total sigilo. Respeitamos completamente sua privacidade e seguimos todas as normas éticas da psicologia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quanto tempo leva para receber uma resposta?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Geralmente respondo dentro de 24 horas úteis. Casos considerados urgentes são priorizados e respondidos o mais rápido possível.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Há custo para usar o serviço?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A primeira conversa é sempre gratuita. Para acompanhamento contínuo, temos planos acessíveis que podem ser discutidos durante nossa primeira conversa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">CheckMente</div>
+                    <p style="color: var(--text-light);">Seu espaço seguro para desabafar e encontrar apoio emocional.</p>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text);">Navegação</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link" data-tab="inicio">Inicio</a>
+                        <a href="#" class="footer-link" data-tab="sobre">Sobre mim</a>
+                        <a href="#" class="footer-link" data-tab="desabafar">Desabafar</a>
+                        <a href="#" class="footer-link" data-tab="ajuda">Ajuda</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text);">Contato</h3>
+                    <div class="footer-links">
+                        <a href="mailto:contato@checkmente.com" class="footer-link">contato@checkmente.com</a>
+                        <a href="tel:+5511999999999" class="footer-link">+55 (11) 99999-9999</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text);">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">💻</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">🔗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
