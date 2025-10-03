@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckMente - Espaço para Desabafar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/checkmente_icon_1.png" sizes="32x32">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/checkmente_icon_1.png" alt="CheckMente Icon" class="logo-icon" style="width: 48px; height: 48px;">
+                    CheckMente20
+                </div>
+                <nav>
+                    <a href="#" class="nav-link active" data-tab="inicio">Inicio</a>
+                    <a href="#" class="nav-link" data-tab="sobre">Sobre mim</a>
+                    <a href="#" class="nav-link" data-tab="desabafar">Desabafar</a>
+                    <a href="#" class="nav-link" data-tab="ajuda">Ajuda</a>
+                    <a href="#" class="nav-link" data-tab="checkin">Check-in Emocional</a>
+                </nav>
+                <button class="theme-toggle" id="themeToggle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
+                        <path d="M12 3v2M16.24 7.76l1.42-1.42M21 12h-2M16.24 16.24l1.42 1.42M12 19v2M7.76 16.24l-1.42 1.42M3 12H1M7.76 7.76L6.34 6.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Dark</span> Modo Escuro
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Aba Inicio -->
+        <div id="inicio" class="tab active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Seu Espaço para Desabafar</h1>
+                    <p>Um lugar seguro onde suas palavras são ouvidas e seus sentimentos são compreendidos</p>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.05 1.05 4.42L2 22l5.58-1.05C9.95 21.64 11.46 22 13 22h7c1.1 0 2-.9 2-2V12c0-5.52-4.48-10-10-10zM8 10h2v2H8v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Conversa Segura</h3>
+                    <p>Compartilhe seus pensamentos em um ambiente livre de julgamentos e com total privacidade</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4c0-1.11-.89-2-2-2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h8c1.11 0 2-.89 2-2V4zm-2 0v16H6V4h8zm-1 7h-2v2h2v-2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Apoio Emocional</h3>
+                    <p>Receba orientação profissional para lidar com desafios emocionais e acadêmicos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm3 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Confidencialidade</h3>
+                    <p>Todas as conversas são protegidas com os mais altos padrões de segurança e sigilo</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Aba Sobre Mim -->
+        <div id="sobre" class="tab">
+            <div class="profile">
+              f  <div class="profile-info">
+                    <h2>Olaaa bem vindo ao CheckMente</h2>
+                    <p>Eu sou a Emanoelly Borges da Silva IIW24A, desenvolvi o CheckMente para se sentir bem consigo mesmo!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba Desabafar -->
+        <div id="desabafar" class="tab">
+            <div class="form-container">
+                <h2 class="form-title">Venha Desabafar</h2>
+                <form id="desabafarForm">
+                    <div class="form-group">
+                        <label class="form-label">Assunto</label>
+                        <select class="form-select">
+                            <option value="">Selecione o assunto</option>
+                            <option value="estudos">Dificuldades nos Estudos</option>
+                            <option value="pessoal">Questões Pessoais</option>
+                            <option value="relacionamentos">Relacionamentos</option>
+                            <option value="ansiedade">Ansiedade e Estresse</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Seu desabafo</label>
+                        <textarea class="form-textarea" placeholder="Conte-me o que está passando..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Prefere ser contactado?</label>
+                        <select class="form-select">
+                            <option value="">Selecione uma opção</option>
+                            <option value="email">E-mail</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="nenhum">Prefiro não ser contactado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Informações de contato</label>
+                        <input type="text" class="form-input" placeholder="E-mail ou número de WhatsApp">
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">
+                        Enviar Desabafo
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+
+        </div>
+
+        <!-- Aba Ajuda -->
+        <div id="ajuda" class="tab">
+            <div class="form-container">
+                <h2 class="form-title">Reportar Problema</h2>
+                <form id="reportForm">
+                    <div class="form-group">
+                        <label class="form-label">Descreva o problema</label>
+                        <textarea class="form-textarea" placeholder="Descreva em detalhes o problema que encontrou..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Em qual página ocorreu?</label>
+                        <select class="form-select">
+                            <option value="">Selecione a página</option>
+                            <option value="inicio">Página Inicial</option>
+                            <option value="sobre">Sobre Mim</option>
+                            <option value="desabafar">Venha Desabafar</option>
+                            <option value="ajuda">Ajuda</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Seu e-mail para contato</label>
+                        <input type="email" class="form-input" placeholder="seu@email.com">
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Reportar Problema
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="text-align: center; margin: 3rem 0 2rem; font-size: 2rem; font-weight: 700;">Perguntas Frequentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como funciona o processo de desabafo?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você preenche o formulário na aba "Venha desabafar" e eu entro em contato dentro de 24 horas para agendarmos uma conversa inicial gratuita.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Meus dados são confidenciais?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Todos os dados são criptografados e armazenados com total sigilo. Respeitamos completamente sua privacidade e seguimos todas as normas éticas da psicologia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quanto tempo leva para receber uma resposta?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Geralmente respondo dentro de 24 horas úteis. Casos considerados urgentes são priorizados e respondidos o mais rápido possível.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Há custo para usar o serviço?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A primeira conversa é sempre gratuita. Para acompanhamento contínuo, temos planos acessíveis que podem ser discutidos durante nossa primeira conversa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba Check-in Emocional -->
+        <div id="checkin" class="tab">
+            <div class="form-container">
+                <h2 class="form-title">Check-in Emocional</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: var(--text-light);">Como você está se sentindo hoje? Faça seu check-in emocional para acompanhar seu bem-estar.</p>
+                <form id="checkinForm">
+                    <div class="form-group">
+                        <label class="form-label">Como você está se sentindo?</label>
+                        <select class="form-select" name="mood" required>
+                            <option value="">Selecione seu humor</option>
+                            <option value="muito-feliz">Muito Feliz</option>
+                            <option value="feliz">Feliz</option>
+                            <option value="neutro">Neutro</option>
+                            <option value="triste">Triste</option>
+                            <option value="muito-triste">Muito Triste</option>
+                            <option value="ansioso">Ansioso</option>
+                            <option value="estressado">Estressado</option>
+                            <option value="calmo">Calmo</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Notas adicionais (opcional)</label>
+                        <textarea class="form-textarea" name="notes" placeholder="Conte um pouco mais sobre como você está se sentindo..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">
+                        Registrar Check-in
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">CheckMente</div>
+                    <p style="color: var(--text-light);">Seu espaço seguro para desabafar e encontrar apoio emocional.</p>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text);">Navegação</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link" data-tab="inicio">Inicio</a>
+                        <a href="#" class="footer-link" data-tab="sobre">Sobre mim</a>
+                        <a href="#" class="footer-link" data-tab="desabafar">Desabafar</a>
+                        <a href="#" class="footer-link" data-tab="ajuda">Ajuda</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text);">Contato</h3>
+                    <div class="footer-links">
+                        <a href="mailto:contato@checkmente.com" class="footer-link">contato@checkmente.com</a>
+                        <a href="tel:+5511999999999" class="footer-link">+55 (11) 99999-9999</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text);">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Phone">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="Laptop">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="4" width="18" height="12" rx="2" ry="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 20h20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="Camera">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="9" cy="9" r="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="m21 15-3.086-3.086a2 2 0 00-2.828 0L6 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="Link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
